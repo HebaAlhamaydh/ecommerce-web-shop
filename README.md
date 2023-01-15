@@ -1,4 +1,4 @@
 # AMAZONA
 
 
-# [liveURL](https://ecommerce-web-shop-z8pw.vercel.app/)
+# [liveURL](https://ecommerce-web-shop-eosin.vercel.app/)

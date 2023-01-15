@@ -36,7 +36,7 @@ export default function ProductScreen() {
     const fetchData = async () => {
       dispatch({ type: 'FETCH_REQUEST' })
       try {
-        const result = await axios.get(`http://localhost:5000/v1/items/${slug}`)
+        const result = await axios.get(`https://backendweb-heba.up.railway.app/v1/items/${slug}`)
         dispatch({ type: 'FETCH_SUCCESS', payload: result.data })
       } catch (err) {
         dispatch({ type: 'FETCH_FAIL', payload: getError(err) })

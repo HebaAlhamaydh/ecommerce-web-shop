@@ -54,7 +54,7 @@ export default function ProductScreen() {
   const addToCartHandler = async () => {
     const existItem = cart.cartItems.find((x) => x.id === product.id);
     const quantity = existItem ? existItem.quantity + 1 : 1;
-    const { data } = await axios.get(`http://localhost:5000/v1/items/${product.id}`);
+    const { data } = await axios.get(`https://backendweb-heba.up.railway.app/v1/items/${product.id}`);
     if (data.countInStock < quantity) {
       // setEmpty(false)
       window.alert('Sorry. Product is out of stock');

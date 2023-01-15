@@ -32,7 +32,7 @@ function HomeScreen() {
     const fetchData = async () => {
        dispatch({ type: 'FETCH_REQUEST' })
       try {
-        const result = await axios.get('http://localhost:5000/v1/items')
+        const result = await axios.get('https://backendweb-heba.up.railway.app/v1/items')
         dispatch({ type: 'FETCH_SUCCESS', payload: result.data })
       } catch (err) {
         dispatch({ type: 'FETCH_FAIL', payload: err.message })

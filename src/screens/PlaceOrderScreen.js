@@ -49,7 +49,7 @@ export default function PlaceOrderScreen() {
     try {
       dispatch({ type: 'CREATE_REQUEST' });
 
-      const { data } = await axios.post('http://localhost:5000/v1/orders',
+      const { data } = await axios.post('https://backendweb-heba.up.railway.app/orders',
         {
             orderItems: cart.cartItems,
             shippingAddress: cart.shippingAddress,

@@ -33,7 +33,7 @@ export default function SignupScreen() {
 
   try {
     axios
-      .post("http://localhost:5000/signup", { username, password, email })
+      .post("https://backendweb-heba.up.railway.app/signup", { username, password, email })
       .then((data) => {
         ctxDispatch({ type: 'USER_SIGNIN', payload: data });
           localStorage.setItem('userInfo', JSON.stringify(data));

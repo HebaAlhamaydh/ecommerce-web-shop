@@ -128,9 +128,9 @@ button.thumbnail {
 
 footer {
   background: rgb(0, 0, 0);
-  /* background: radial-gradient(circle, rgb(80, 81, 82) 0%, rgba(116, 117, 121, 0.998) 100%); */
-  border-top: 1px solid #eee;
-  padding: 1em 3em;
+ 
+  /* border-top: 0.1px solid #eee; */
+  /* padding: 1em 3em; */
   margin: 0;
   position: fixed;
   color: #eee;

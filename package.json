@@ -1,6 +1,6 @@
 {
   "name": "ecommerce-web-shop",
-  "proxy": "http://localhost:5000",
+  "proxy": "https://backendweb-heba.up.railway.app/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
